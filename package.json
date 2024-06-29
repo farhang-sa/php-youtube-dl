@@ -5,9 +5,9 @@
   "author": "Farhang Saeedi",
   "license": "MIT",
   "scripts": {
-    "start": "node nodemon.js"
-	"build" : "webpack --mode production" ,
-	"deploy" : "deploy.sh & deplay-win.bat"
+	"start": "node nodemon.js" , 
+	"build" : "webpack --mode production" , 
+	"deploy" : "./deploy.sh && ./deplay.bat"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.24.7",

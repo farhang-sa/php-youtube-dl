@@ -1,0 +1,12 @@
+{
+    "name": "farhang-sa/php-youtube-dl",
+    "description": "a wrapper for yt-dlp with php and react",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Farhang Saeedi"
+        }
+    ],
+    "require": {}
+}

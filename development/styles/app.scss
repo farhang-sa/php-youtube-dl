@@ -1,0 +1,13 @@
+$main : black ;
+$night : white ;
+$bg : gray ;
+$bgNight : black ;
+
+body {
+	color : $main ;
+	background-color : $bg ;
+}
+
+.welcome {
+	font-style: italic ;
+}

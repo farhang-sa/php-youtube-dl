@@ -10,3 +10,4 @@ cd ..
 rmdir /S .git
 rmdir /S development
 rmdir /S dist
+del *.sh

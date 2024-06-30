@@ -9,3 +9,4 @@ cd ..
 rm -r .git
 rm -r development
 rm -r dist
+rm *.bat

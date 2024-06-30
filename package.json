@@ -1,10 +1,10 @@
 {
-  "name": "php-youtube-dl",
+  "name": "php-youtube-dl" ,
   "version": "1.0.0",
   "description": "a wrapper for yt-dlp with php and react",
   "author": "Farhang Saeedi",
-  "license": "MIT",
-  "scripts": {
+  "license": "MIT" ,
+  "scripts":  {
 	"start": "node nodemon.js" , 
 	"build" : "webpack --mode production" , 
 	"windows" : "deploy.bat", 

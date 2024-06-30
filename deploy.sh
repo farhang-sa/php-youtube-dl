@@ -1,9 +1,9 @@
 rm *.js && rm *.json
-rm *.gitignore && rm *.babelrc
+rm ./.gitignore && rm ./.babelrc
 mv ./dist/drawables ./drawables
 mv ./dist/scripts ./scripts
 mv ./dist/styles ./styles
-cd dist
+cd ./dist
 mv *.* ..
 cd ..
 rm -r .git

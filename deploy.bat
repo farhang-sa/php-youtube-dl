@@ -4,7 +4,7 @@ del *.gitignore && del *.babelrc
 move ./dist/drawables ./drawables
 move ./dist/scripts ./scripts
 move ./dist/styles ./styles
-cd dist
+cd ./dist
 move *.* ..
 cd ..
 rmdir /S .git

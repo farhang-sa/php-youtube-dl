@@ -6,7 +6,7 @@ nodemon({
 	// This is fake , we have Internal-PHP-Server for backend :)
   	script: 'fake-server-script.js',
 
-  	ext: 'js jsx json css scss php' ,
+  	ext: 'js jsx ts tssx json css scss php' ,
   	"ignore": [
 	    ".git",
 		"./nodemon.js",

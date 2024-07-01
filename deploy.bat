@@ -8,9 +8,9 @@ move ./dist/styles ./styles
 cd ./dist
 move *.* ..
 cd ..
-rmdir /S .git
-rmdir /S development
-rmdir /S dist
+rmdir /S /Q .git
+rmdir /S /Q development
+rmdir /S /Q dist
 del *.sh
 echo ----------------
 echo ----------------

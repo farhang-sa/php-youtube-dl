@@ -16,4 +16,4 @@ after that , it starts a <code>php-built-in-server [php -S localhost:8080 -t ./d
 3. delete dev files and keep the product :
    - if server is windows : <code>npm run windows</code>
    - if server is linux : <code>npm run linux</code>
-4. create a REAL php server for root of the project ( you should know how :)
+4. upload it any where you want and use a REAL php server

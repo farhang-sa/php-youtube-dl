@@ -3,7 +3,6 @@ rm *.js
 rm *.json
 rm ./.gitignore
 rm ./.babelrc
-mv ./dist/drawables ./drawables
 mv ./dist/scripts ./scripts
 mv ./dist/styles ./styles
 cd ./dist

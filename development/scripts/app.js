@@ -43,7 +43,10 @@ const App = () => {
 				<div className="row mt-5">
 					<div className="col-12">
 						<h5>
-							See lhis <a href="https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md">link</a> for supported sites
+							See this &#160;
+							<a target="_blank"
+							    href="https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md">link
+							</a>&#160; for supported sites
 						</h5>
 					</div>
 				</div>
@@ -75,7 +78,9 @@ const App = () => {
 						</div>
 					</div>
 				</div>
-				<footer className="mt-4"><h5>All Rights NOT Reserved!</h5></footer>
+				<footer className="mt-4">
+					<h5>All Rights NOT Reserved!</h5>
+				</footer>
 			</div>
 		</>
 	);

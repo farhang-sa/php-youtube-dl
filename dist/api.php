@@ -21,7 +21,9 @@ if( ! file_exists( $exFile ) ) {
     // thank god i'm ganna run this in a vps in germany :)
     // i'm in a village in iran. my net is shitty!!!
     $dlc = file_get_contents( $dlLink );
-    @file_put_contents( basename( $dlLink ) , $dlc );
+    @file_put_contents( $exFile , $dlc );
+    if( PHP_OS === "Linux" ) 
+        shell_exec( 'chmod 777 ' . $exFile );
 } if( ! file_exists( $exFile ) )
     die( 'yt-dlp binary not prepared' );
 

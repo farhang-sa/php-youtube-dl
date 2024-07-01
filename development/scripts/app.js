@@ -37,35 +37,47 @@ const App = () => {
 	}
 
 	return (
-		<div className="text-center p-5">
+		<>
 			<div className="container">
-				<code>https://www.youtube.com/watch?v=LKqnKrKA1wg</code>
-				<div className="row"> &#160; </div>
-				<span className="input-group">
-					<input type="hidden" name="hidden1" value="hideVal1"/>
-					<input type="text"
-					   className="form-control form-control-lg link-input"
-					   placeholder="Enter link"/>
-					{!isDownloading ?
-						(<span className="input-group-addon p-4">
-						<BsCloudDownloadFill
-							onClick={() => askDownload()}
-							style={{width: "2em", height: "2em", cursor: "pointer"}}/>
-					</span>) : (<span className="input-group-addon p-3">
-						<ReactLoading type="spin" color="lightblue"
-							  style={{width: "2em", height: "2em"}}/>
-					</span>)}
-				</span>
-			</div>
-			<div className="row p-4">
-				<div className="col-12 col-sm-3"></div>
-				<div className="col-12 col-sm-6">
-					<div className="alert alert-info system-message">
-						{systemMessage}
+				<header><h4>Welcome To YouTube Downloader</h4></header>
+				<div className="row mt-5">
+					<div className="col-12">
+						<h5>
+							See lhis <a href="https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md">link</a> for supported sites
+						</h5>
 					</div>
 				</div>
+				<div className="row mt-4">
+					<div className="col-12 col-sm-2"></div>
+					<div className="col-12 col-sm-8">
+						<span className="input-group">
+							<input type="hidden" name="hidden1" value="hideVal1"/>
+							<input type="text"
+							   className="form-control form-control-lg link-input"
+							   placeholder="Enter link"/>
+							{!isDownloading ?
+								(<span className="input-group-addon p-4">
+								<BsCloudDownloadFill
+									onClick={() => askDownload()}
+									style={{width: "2em", height: "2em", cursor: "pointer"}}/>
+							</span>) : (<span className="input-group-addon p-3">
+								<ReactLoading type="spin" color="lightblue"
+									  style={{width: "2em", height: "2em"}}/>
+							</span>)}
+						</span>
+					</div>
+				</div>
+				<div className="row p-4 mt-4 p-0">
+					<div className="col-12 col-sm-2 p-0"></div>
+					<div className="col-12 col-sm-8 p-0">
+						<div className="alert alert-info system-message">
+							<h5 className="m-0">{systemMessage}</h5>
+						</div>
+					</div>
+				</div>
+				<footer className="mt-4"><h5>All Rights NOT Reserved!</h5></footer>
 			</div>
-		</div>
+		</>
 	);
 }
 

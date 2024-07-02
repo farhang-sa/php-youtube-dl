@@ -6,7 +6,7 @@ $wrw = str_ireplace( $bas , "" , $wrw );
 ?><!doctype html>
 <html class="col">
     <head>
-        <title>Welcome</title>
+        <title>Welcome To YTDL</title>
         <meta name='charset' content='text/html; charset=UTF-8' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=yes' />
         <link href="<?php print $wrw; ?>styles/bootstrap.min.css" rel='stylesheet' type='text/css' />

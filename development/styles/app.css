@@ -5,3 +5,16 @@ body{
 .hidden{
 	display: none;
 }
+
+.btn {
+	border-radius: 0;
+}
+
+a {
+	text-decoration: none ;
+	transition-duration: 2s;
+}
+
+a:hover {
+	transition-duration: 2s;
+}

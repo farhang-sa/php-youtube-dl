@@ -23,9 +23,10 @@ cmd = "webpack --mode development";
 nodemon.on('start', function () {
     exec( cmd , (err, stdout, stderr) => {});
 	if( ! phpServerStarted ){
-		exec( "php -S localhost:8080 -t ./dist" );
+		exec( "php -S 0.0.0.0:8080 -t ./dist" );
 		phpServerStarted = true ;
-	} console.log('> Nodemon has started : localhost:8080');
+		console.log('> PHP-Server Running At 0.0.0.0:8080 | localhost:8080');
+	} console.log('> Nodemon has started');
 }).on('quit', function () {
   	console.log('> Nodemon has quit');
   	process.exit();

@@ -91,4 +91,4 @@ if( is_array( $down ) ) foreach( $down as $intel ){
             die( $link );
         die( $intel );
     }
-} die( 'Download failed' ); ?>
+} die( 'Download failed : change quality options' ); ?>

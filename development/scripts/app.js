@@ -25,8 +25,6 @@ const findGoodName = ( fileName ) =>{
 	let filExt = findExt( fileName );
 	let newName = fileName ;
 	newName = newName.replaceAll( '.' + filExt , '' );
-	if( newName.length > 40 )
-		newName = newName.slice(0, 40 );
 	newName = newName.replaceAll( ' ' , '_' );
 	newName = newName.replace( /[^a-zA-Z0-9_.-]/g , '' ); // clean name
 	newName = newName.trim( ' .' );

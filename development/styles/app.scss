@@ -1,13 +1,10 @@
 $main : black ;
 $night : white ;
-$bg : gray ;
+$bg : white ;
 $bgNight : black ;
+@import "app.css";
 
 body {
 	color : $main ;
 	background-color : $bg ;
-}
-
-.welcome {
-	font-style: italic ;
 }

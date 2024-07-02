@@ -53,7 +53,8 @@ if( ! isset( $_POST[ 'link' ] ) )
 $link = $_POST[ 'link' ];
 $quality = isset( $_POST['quality'] ) ? $_POST['quality'] : null;
 if( strtolower( $link ) === 'clear' || strtolower( $link ) === 'clean' ){
-    shell_exec( $isLinux ? 'rm *.mp4 && rm *.webm' : 'del *.mp4 && del *.webm' );
+    shell_exec( $isLinux ? 'rm *.mp4' : 'del *.mp4' );
+    shell_exec( $isLinux ? 'rm *.webm' : 'del *.webm' );
     die( 'all videos deleted' ) ;
 } else if( stristr( $link , 'cleanfile:' ) !== false ){
     $link = str_ireplace( 'cleanfile:' , '' , $link );
@@ -77,8 +78,8 @@ if( strtolower( $link ) === 'clear' || strtolower( $link ) === 'clean' ){
     $videos .= '}' ;
     die( $videos );
 } // else :
-$down = "-f 'bestvideo" . ( $quality ? "[height=$quality]" : '' ) . "+bestaudio'";
-$down = shell_exec(  $exFile . ' ' . $down . ' ' . $link );
+$down = $down = $quality ? ' -S "res:'. $quality . '"' : '' ;
+$down = shell_exec(  $exFile . $down . ' ' . $link );
 $down = explode( "[download]" , $down );
 if( is_array( $down ) ) foreach( $down as $intel ){
     $intel = trim( $intel , " /\\\r\n\t" );
